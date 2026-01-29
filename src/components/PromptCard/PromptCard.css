@@ -1,0 +1,82 @@
+.prompt-card {
+  background-color: #f8f8f8;
+  border: 2px solid #b288c0;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+ 
+body.dark-mode .prompt-card {
+  background-color: #2a2a2a;
+  border-color: #9a48d0;
+}
+ 
+.prompt-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(154, 72, 208, 0.2);
+}
+ 
+/* TITRE */
+.prompt-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #9a48d0;
+  cursor: pointer;
+  margin: 0;
+}
+ 
+body.dark-mode .prompt-title {
+  color: #b288c0;
+}
+ 
+/* DESCRIPTION */
+.prompt-description {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+}
+ 
+body.dark-mode .prompt-description {
+  color: #cccccc;
+}
+ 
+/* ACTIONS */
+.prompt-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+ 
+.btn-edit,
+.btn-delete {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+ 
+.btn-edit {
+  background-color: #9a48d0;
+  color: #ffffff;
+}
+ 
+.btn-edit:hover {
+  background-color: #8a38c0;
+}
+ 
+.btn-delete {
+  background-color: #ff4444;
+  color: #ffffff;
+}
+ 
+.btn-delete:hover {
+  background-color: #dd3333;
+}
